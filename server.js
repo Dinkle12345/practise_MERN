@@ -88,6 +88,6 @@ app.put('/update/:username',async(req,res)=>{
         res.status(500).json(err)
     }
 })
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log("Server is started")
 })
